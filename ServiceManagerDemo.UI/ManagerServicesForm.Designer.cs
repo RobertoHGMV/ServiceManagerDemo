@@ -30,6 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSaveConf = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTimeOut = new System.Windows.Forms.TextBox();
             this.btnInstaller = new System.Windows.Forms.Button();
             this.btnUinstaller = new System.Windows.Forms.Button();
             this.btnRestartServies = new System.Windows.Forms.Button();
@@ -44,9 +47,6 @@
             this.btnStopServiceMemory = new System.Windows.Forms.Button();
             this.btnStartServiceMemory = new System.Windows.Forms.Button();
             this.cmdOk = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTimeOut = new System.Windows.Forms.TextBox();
-            this.btnSaveConf = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -84,6 +84,32 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Monitor de Serviço";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveConf
+            // 
+            this.btnSaveConf.Location = new System.Drawing.Point(226, 93);
+            this.btnSaveConf.Name = "btnSaveConf";
+            this.btnSaveConf.Size = new System.Drawing.Size(82, 23);
+            this.btnSaveConf.TabIndex = 10;
+            this.btnSaveConf.Text = "Salvar";
+            this.btnSaveConf.UseVisualStyleBackColor = true;
+            this.btnSaveConf.Click += new System.EventHandler(this.btnSaveConf_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Timeoute (minutos)";
+            // 
+            // txtTimeOut
+            // 
+            this.txtTimeOut.Location = new System.Drawing.Point(120, 95);
+            this.txtTimeOut.Name = "txtTimeOut";
+            this.txtTimeOut.Size = new System.Drawing.Size(100, 20);
+            this.txtTimeOut.TabIndex = 8;
             // 
             // btnInstaller
             // 
@@ -230,32 +256,7 @@
             this.cmdOk.TabIndex = 1;
             this.cmdOk.Text = "OK";
             this.cmdOk.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Timeoute (minutos)";
-            // 
-            // txtTimeOut
-            // 
-            this.txtTimeOut.Location = new System.Drawing.Point(120, 95);
-            this.txtTimeOut.Name = "txtTimeOut";
-            this.txtTimeOut.Size = new System.Drawing.Size(100, 20);
-            this.txtTimeOut.TabIndex = 8;
-            // 
-            // btnSaveConf
-            // 
-            this.btnSaveConf.Location = new System.Drawing.Point(226, 93);
-            this.btnSaveConf.Name = "btnSaveConf";
-            this.btnSaveConf.Size = new System.Drawing.Size(82, 23);
-            this.btnSaveConf.TabIndex = 10;
-            this.btnSaveConf.Text = "Salvar";
-            this.btnSaveConf.UseVisualStyleBackColor = true;
-            this.btnSaveConf.Click += new System.EventHandler(this.btnSaveConf_Click);
+            this.cmdOk.Click += new System.EventHandler(this.cmdOk_Click);
             // 
             // ManagerServicesForm
             // 

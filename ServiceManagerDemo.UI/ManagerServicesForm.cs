@@ -22,7 +22,6 @@ namespace ServiceManagerDemo.UI
 
             SetButtonsDate();
             SetButtonsMemory();
-            var t = Path.Combine(Assembly.GetAssembly(typeof(ServiceManagerDemoDate.ServiceDate)).Location, ".config");
         }
 
         #region Serviços de Memória
@@ -307,5 +306,17 @@ namespace ServiceManagerDemo.UI
         }
 
         #endregion
+
+        private void cmdOk_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                ShowError(ex);
+            }
+        }
     }
 }
